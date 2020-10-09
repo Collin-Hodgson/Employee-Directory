@@ -3,10 +3,10 @@ import "./style.css";
 
 function Header() {
   return (
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Employee Directory</h4>
-        <p class="card-text">
+    <div class="header">
+      <div class="header-body">
+        <h4 class="header-title">Employee Directory</h4>
+        <p class="header-text">
           This application will show current employees and allows you to search
           for employees by name.
         </p>
