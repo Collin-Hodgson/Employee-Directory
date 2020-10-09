@@ -4,7 +4,6 @@ import "./style.css";
 function Header() {
   return (
     <div class="card">
-      <div class="card-header">Employee Directory</div>
       <div class="card-body">
         <h4 class="card-title">Employee Directory</h4>
         <p class="card-text">
