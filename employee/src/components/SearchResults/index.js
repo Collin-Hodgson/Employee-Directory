@@ -3,8 +3,8 @@ import "./style.css";
 
 function SearchResults(props) {
   return (
-    <table class="table">
-      <thead>
+    <table class="table table-striped table-inverse table-responsive">
+      <thead class="thead-inverse">
         <tr>
           <th></th>
           <th></th>
