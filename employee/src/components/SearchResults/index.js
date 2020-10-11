@@ -3,13 +3,27 @@ import "./style.css";
 
 function SearchResults(props) {
   return (
-    <ul className="list-group search-results">
-      {props.results.map(result => (
-        <li key={result} className="list-group-item">
-          <img alt="Dog" src={result} className="img-fluid" />
-        </li>
-      ))}
-    </ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   );
 }
 
