@@ -3,6 +3,7 @@ import API from "../utils/API";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Container from "../components/Container";
+import Hero from "../components/Hero";
 
 class Search extends Component {
   state = {
@@ -38,6 +39,7 @@ class Search extends Component {
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
+          <Hero></Hero>
           <h1 className="text-center">Search Employee By Name!</h1>
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
