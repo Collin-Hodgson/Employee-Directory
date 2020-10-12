@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
+import Container from "../components/Container";
 
 class Search extends Component {
   state = {
     search: "",
-    breeds: [],
+    employees: [],
     results: [],
     error: "",
   };
@@ -24,7 +25,7 @@ class Search extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    API.getDogsOfBreed(this.state.search)
+    API.getEmployeeByName(this.state.search)
       .then((res) => {
         if (res.data.status === "error") {
           throw new Error(res.data.message);
@@ -37,13 +38,7 @@ class Search extends Component {
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
-          <h1 className="text-center">Search By Breed!</h1>
-          <Alert
-            type="danger"
-            style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
-          >
-            {this.state.error}
-          </Alert>
+          <h1 className="text-center">Search Employee By Name!</h1>
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
