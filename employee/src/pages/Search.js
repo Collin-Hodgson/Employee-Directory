@@ -47,7 +47,7 @@ class Search extends Component {
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
-            breeds={this.state.breeds}
+            employees={this.state.employees}
           />
           <SearchResults results={this.state.results} />
         </Container>
